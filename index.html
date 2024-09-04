@@ -14,24 +14,41 @@
         <a class="logo" href="#">
           <img src="./img/logo.png" alt="" />
         </a>
-        <nav class="nav-mobile">
-          <button type="button">
+        <nav class="nav mobile">
+          <button class="btn-dropdown" type="button">
             <img src="./img/menu.svg" />
           </button>
+        </nav>
+        <nav class="nav pc">
+          <ul class="nav-list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+          </ul>
+          <button class="btn_download pc">Download</button>
         </nav>
       </header>
       <main>
         <section class="download-container">
           <h2 class="sr-only">다운로드</h2>
-          <p class="title">
-            Lorem Ipsum is simply dummy text of the printing and
-          </p>
-          <p class="content-thin">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown
-          </p>
-          <button class="btn_download" type="button">Download</button>
+          <div>
+            <p class="title">
+              Lorem Ipsum is simply dummy text of the printing and
+            </p>
+            <p class="content-thin">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown
+            </p>
+            <button class="btn_download" type="button">Download</button>
+          </div>
+          <img src="./img/box-cat.png" alt="박스를 머리에 쓰고 있는 호두" />
         </section>
         <section class="blog-container">
           <h2 class="sr-only">호두 블로그 포스트 예시</h2>
@@ -42,13 +59,15 @@
               src="./img/bed_cat.jpg"
               alt="호두가 침대 위에 누워서 위를 바라보는 모습"
             />
-            <p class="title">
-              Lorem Ipsum is simply dummy text of the printing and dummy text
-            </p>
-            <p class="content-thin">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+            <div>
+              <p class="title">
+                Lorem Ipsum is simply dummy text of the printing and dummy text
+              </p>
+              <p class="content-thin">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
           </div>
           <p class="title bold-orange">dummy text of the printing and dummy</p>
           <p class="content-regular">
@@ -98,7 +117,7 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
           </p>
-          <form>
+          <form class="">
             <input
               type="email"
               name="Subscribe"
