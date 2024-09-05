@@ -136,8 +136,9 @@ main {
 .download-container > img {
     position: absolute;
     width : 19.7rem;
-    left : center;
+    left : 50%;
     bottom : -6.2rem;
+    transform: translateX(-50%);
 }
 
 
@@ -164,10 +165,17 @@ main {
 }
 
 .card {
-    width : 100%;
     border-radius: 1.8rem;
     box-shadow: 10px 10px 20px 0px #00000040;
     object-fit: cover;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1.8rem;
+    box-shadow: 10px 10px 20px 0px #00000040;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
 .blog-container .content-regular {
@@ -178,7 +186,7 @@ main {
     display: block;
 }
 
-.blog-item .card {
+.blog-item .card img {
     aspect-ratio: 326/190;  
 }
 
@@ -230,8 +238,10 @@ main {
 }
 
 .subscribe-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding : 0 3.2rem;
     height: 24rem;
     width: 100%;
     background-image: url('../../img/img_5.jpg');
@@ -251,6 +261,10 @@ main {
 }
 
 .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     position: absolute;
     bottom : 17.2rem;
     border-radius: 1.8rem;
@@ -403,28 +417,32 @@ footer {
     .download-container {
         position: relative;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        padding : 10.2rem 32rem 26.2rem ;
+        align-items: center;
+        justify-content: space-evenly;
+        padding : 10.2rem 0 0 ;
+        overflow-x: hidden;
     }
     
     .download-container  > img {
         position: relative;
         width: 41.5rem;
-        right: 0;
+        left : 6.67%;
         bottom : 0;
+        transform: translate(0 , 13.93%);
     }
 
     .download-container .title {
+        max-width: 73.7rem;
         text-align: left;
         font-size: 4.8rem;
         line-height: 6.1rem;
-        margin: 20rem 12.8rem 4rem 0;
+        margin: 0 0 4rem 0;
     }
 
     .download-container .content-thin {
+        max-width: 43.9rem;
         margin : 0;
-        padding : 0 29.8rem 4rem 0;
+        padding : 0 0 4rem 0;
         text-align: left;
     }
     
@@ -433,11 +451,12 @@ footer {
     }
 
     .blog-container {
-        padding : 0;
+        padding : 8rem 0  19.6rem;
+        margin : 0;
     }
 
     .blog-container .title {
-        margin : 12rem auto 4rem;
+        margin : 0 auto 4rem;
     }
 
     .blog-container .content-regular {
@@ -448,10 +467,18 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap : 11rem;
+        margin : 0 auto 12rem;
     }
 
-    .blog-item .card {
+
+    .blog-item > div:last-child {
+        flex-basis: 26.56%;
+    }
+
+    .blog-item .card img {
+        max-width: 66rem;
         aspect-ratio: 660/390;
     }
 
@@ -476,16 +503,16 @@ footer {
         width: 19.69%;
     }
 
+
     .learn-more-container {
         flex-direction: row;
         align-items: space-between;
         justify-content: center;
-        margin : 9rem auto;
+        margin : 9rem auto 0;
         gap : 5.4rem;
     }
 
     .learn-more-container .content-regular{
-        max-width : 73.9rem;
         margin : 0;
         text-align: left;
     }
@@ -493,6 +520,73 @@ footer {
     .btn-learn-more {
         padding : 1.5rem 2.9rem;
         border-radius: 4rem;
-        
     }
+    .subscribe-wrap{
+        margin : 0 auto;
+        height: 34rem;
+    }
+
+    .subscribe-container{
+        top : -9.4rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding : 5rem 6.3rem 5rem 5.8rem;
+        width: auto;
+    }
+
+    .subscribe-container .title {
+        font-size: 3.6rem;
+        line-height: 4.507rem;
+        text-align: left;
+        margin : 0 0 3rem 0;
+    }
+    
+    .subscribe-container .content-thin {
+        text-align: left;
+        font-size: 1.4rem;
+        line-height: 1.753rem;
+        margin: 0;
+    }
+    
+    .subscribe-container > div{
+        flex-basis: 49.1rem;
+    }
+    .subscribe-container > form {
+        flex-basis:  53rem;
+    }
+
+    .subscribe-container form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .subscribe-container input[type='email'] {
+        padding : 2rem 5.5rem 2rem 7rem;
+        background-size: 2.4rem;
+        background-position: 2.8rem center;
+    }
+
+    .subscribe-container input[type='email']::placeholder{
+        font-size: 1.6rem;
+    }
+    
+    .btn-subscribe {
+        display: inline;
+        position: absolute;
+        margin : 0;
+        right: 0.5rem;
+    }
+
+    footer {
+        margin : 0 auto;
+        flex-direction: column;
+    }
+    .group-footer {
+        flex-direction: row;
+    }
+
 }
