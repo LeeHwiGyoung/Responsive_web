@@ -10,99 +10,110 @@
   <body>
     <div class="container">
       <header>
-        <h1 class="sr-only">호두</h1>
-        <a class="logo" href="#">
-          <img src="./img/logo.png" alt="" />
-        </a>
-        <nav class="nav mobile">
-          <button class="btn-dropdown" type="button">
-            <img src="./img/menu.svg" />
-          </button>
-        </nav>
-        <nav class="nav pc">
-          <ul class="nav-list">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Support</a>
-            </li>
-          </ul>
-          <button class="btn_download pc">Download</button>
-        </nav>
+        <div>
+          <h1 class="sr-only">호두</h1>
+          <a class="logo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+          <nav class="nav mobile">
+            <button class="btn-dropdown" type="button">
+              <img src="./img/menu.svg" />
+            </button>
+          </nav>
+          <nav class="nav pc">
+            <ul class="nav-list">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+            <button class="btn_download pc">Download</button>
+          </nav>
+        </div>
       </header>
       <main>
-        <section class="download-container">
-          <h2 class="sr-only">다운로드</h2>
-          <div>
-            <p class="title">
-              Lorem Ipsum is simply dummy text of the printing and
-            </p>
-            <p class="content-thin">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown
-            </p>
-            <button class="btn_download" type="button">Download</button>
-          </div>
-          <img src="./img/box-cat.png" alt="박스를 머리에 쓰고 있는 호두" />
-        </section>
-        <section class="blog-container">
-          <h2 class="sr-only">호두 블로그 포스트 예시</h2>
-          <div class="blog-item">
-            <div class="card">
-              <img
-                src="./img/bed_cat.jpg"
-                alt="호두가 침대 위에 누워서 위를 바라보는 모습"
-              />
-            </div>
+        <section class="download-wrap">
+          <div class="download-container">
+            <h2 class="sr-only">다운로드</h2>
             <div>
               <p class="title">
-                Lorem Ipsum is simply dummy text of the printing and dummy text
+                Lorem Ipsum is simply <br class="pc" />dummy text of the
+                printing and
               </p>
               <p class="content-thin">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+              </p>
+              <button class="btn_download" type="button">Download</button>
+            </div>
+            <img src="./img/box-cat.png" alt="박스를 머리에 쓰고 있는 호두" />
+          </div>
+        </section>
+        <section>
+          <div class="blog-container">
+            <h2 class="sr-only">호두 블로그 포스트 예시</h2>
+            <div class="blog-item">
+              <div class="card">
+                <img
+                  src="./img/bed_cat.jpg"
+                  alt="호두가 침대 위에 누워서 위를 바라보는 모습"
+                />
+              </div>
+              <div>
+                <p class="title">
+                  Lorem Ipsum is simply dummy text of the printing and dummy
+                  text
+                </p>
+                <p class="content-thin">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+            <p class="title bold-orange">
+              dummy text of the printing and dummy
+            </p>
+            <p class="content-regular">
+              Lorem Ipsum is simply
+              <span class="bold-orange">dummy text</span> of the printing and
+              typesetting industry.<br class="pc" />
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown
+            </p>
+            <ul class="image-slider">
+              <li class="card">
+                <img
+                  src="./img/img_1.jpg"
+                  alt="기둥 모양의 캣타워에 올라가 얼굴만 내민 호두의 모습"
+                />
+              </li>
+              <li class="card">
+                <img
+                  src="./img/img_2.jpg"
+                  alt="벽에 있는 콘센트를 바라보는 호두의 뒷 모습"
+                />
+              </li>
+              <li class="card">
+                <img src="./img/img_3.jpg" alt="바라보는 호두의 모습" />
+              </li>
+            </ul>
+            <div class="learn-more-container">
+              <p class="content-regular">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. <br class="pc" />Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                <br class="pc" />
+                Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
+              <a class="btn-learn-more" href="#">Learn More</a>
             </div>
-          </div>
-          <p class="title bold-orange">dummy text of the printing and dummy</p>
-          <p class="content-regular">
-            Lorem Ipsum is simply <span class="bold-orange">dummy text</span> of
-            the printing and typesetting industry.<br class="pc" />
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown
-          </p>
-          <ul class="image-slider">
-            <li class="card">
-              <img
-                src="./img/img_1.jpg"
-                alt="기둥 모양의 캣타워에 올라가 얼굴만 내민 호두의 모습"
-              />
-            </li>
-            <li class="card">
-              <img
-                src="./img/img_2.jpg"
-                alt="벽에 있는 콘센트를 바라보는 호두의 뒷 모습"
-              />
-            </li>
-            <li class="card">
-              <img src="./img/img_3.jpg" alt="바라보는 호두의 모습" />
-            </li>
-          </ul>
-          <div class="learn-more-container">
-            <p class="content-regular">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. <br class="pc" />Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown
-              <br class="pc" />
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <a class="btn-learn-more" href="#">Learn More</a>
           </div>
         </section>
       </main>
@@ -152,7 +163,7 @@
             </li>
           </ul>
         </section>
-        <section class="link-group">
+        <section class="link-group mobile">
           <h2 class="sr-only">호두 관련 페이지</h2>
           <a href="#">About</a>
           <a href="#">Blog</a>

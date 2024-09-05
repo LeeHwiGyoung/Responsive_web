@@ -28,7 +28,9 @@ html {
     --sns--bg--color : #F29D52;
 }
 
-
+section {
+    width : 100%;
+}
 button {
     padding : 1.1rem 2.4rem;
     background-color : var(--btn--main--color);
@@ -63,19 +65,26 @@ button {
     font-family: var(--font--main);
     font-size: 1.4rem;
     line-height: 1.753rem;
+
 }
 
-.container > header {
+.container > header { 
     width: 100%;
-    position: fixed;
-    top : 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding : 0 2rem;
     background-color: var(--bg--sub--color);
     z-index: 1000;
+    position: fixed;
+    top : 0; 
 }
+
+.container > header > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 0 auto;
+}
+
 
 .logo {
     margin : 2.2rem 0  2.4rem;
@@ -120,6 +129,10 @@ main {
     color:var(--font--bold--orange)
 }
 
+.download-wrap {
+    overflow: hidden;
+}
+
 .download-container {
     position: relative;
     width: 100%;
@@ -129,16 +142,15 @@ main {
     justify-content: center;
     background-color: var(--bg--sub--color);
     text-align: center;
-    overflow-y: hidden;
     padding: 7rem 0 39rem;
 }
 
 .download-container > img {
     position: absolute;
     width : 19.7rem;
-    left : 50%;
+    right : 50%;
     bottom : -6.2rem;
-    transform: translateX(-50%);
+    transform: translateX(50%);
 }
 
 
@@ -353,7 +365,7 @@ footer {
     .pc {
         display: block;
     }
-    .mobile, .link-group{
+    .mobile{
         display: none;
     }
 
@@ -368,12 +380,20 @@ footer {
         font-size: 1.6rem;
         line-height: 2.03rem;
         padding: 0;
+        
     }
 
-    .container > header {
-        justify-content: space-evenly;
-        align-items: center;
+    .container > header  {
+        width: 100%;
         padding : 2.6rem 0;
+    }
+
+    .container > header > div {
+        width: 66.67%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin : 0 auto;
     }
 
    
@@ -412,26 +432,35 @@ footer {
         font-size: 1.6rem;
         line-height: 2.03rem;
     }
-
+    .download-wrap {
+        background-color: var(--bg--sub--color);
+        overflow: hidden;
+    }
+    
     .download-container {
+        width: 66.67%;
+        margin: 0 auto;
         position: relative;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        padding : 10.2rem 0 0 ;
-        overflow-x: hidden;
+        justify-content: space-between;
+        padding : 10.2rem 0 0em ;   
     }
     
+    .download-container > div {
+        flex-basis: 73.1rem;
+    }
+
     .download-container  > img {
         position: relative;
         width: 41.5rem;
-        left : 6.67%;
+        right : 0;
         bottom : 0;
-        transform: translate(0 , 13.93%);
+        transform: translateY(13.93%);
     }
 
     .download-container .title {
-        max-width: 73.7rem;
+        width: 100%;
         text-align: left;
         font-size: 4.8rem;
         line-height: 6.1rem;
@@ -448,10 +477,11 @@ footer {
     .download-container .btn_download {
         margin-right: auto;   
     }
-
+    
     .blog-container {
+        width : 66.67%;
         padding : 8rem 0  19.6rem;
-        margin : 0;
+        margin : 0 auto;
     }
 
     .blog-container .title {
@@ -466,7 +496,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap : 11rem;
         margin : 0 auto 12rem;
     }
@@ -480,7 +510,7 @@ footer {
 
     .blog-item .card img {
         aspect-ratio: 660/390;
-    }
+    }   
 
     .blog-item .title {
         font-size: 3.6rem;
@@ -506,8 +536,6 @@ footer {
 
     .learn-more-container {
         flex-direction: row;
-        align-items: space-between;
-        justify-content: center;
         margin : 9rem auto 0;
         gap : 5.4rem;
     }
@@ -526,13 +554,14 @@ footer {
         height: 34rem;
     }
 
+    
     .subscribe-container{
         bottom : 24.6rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding : 5rem 6.3rem 5rem 5.8rem;
-        width: auto;
+        width: 66.67%;
     }
 
     .subscribe-container .title {
@@ -582,11 +611,34 @@ footer {
     }
 
     footer {
-        margin : 0 auto;
+        width: 100%;
         flex-direction: column;
     }
+    
     .group-footer {
+        width: 66.67%;
+        margin: 0 auto;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .container > header > div,
+    .download-container,
+    .blog-container,
+    .subscribe-container,
+    .group-footer {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .container > header > div {
+        justify-content: space-between;
+    }
+
+
+
+} 
