@@ -647,6 +647,7 @@ dialog {
     .subscribe-wrap{
         margin : 0 auto;
         height: 34rem;
+        background-position: center 40%;
     }
 
     
@@ -703,6 +704,25 @@ dialog {
         position: absolute;
         margin : 0;
         right: 0.5rem;
+    }
+
+    .btn-top {
+        position: absolute;
+        padding : 0.5rem;
+        border : 1px #c4c4c4 solid;
+        border-radius: 50%;
+        background-color: rgba(255 ,255, 255, 0.8);
+        z-index: 10;
+        bottom : 2.4rem;
+        right: 2.4rem;
+    }
+
+    .btn-top img {
+        width: 100%;
+    }
+
+    .btn-top:hover img {
+        filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(5%) hue-rotate(40deg) brightness(96%) contrast(81%);
     }
 
     footer {
