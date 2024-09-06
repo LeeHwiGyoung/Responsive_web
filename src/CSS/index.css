@@ -223,7 +223,6 @@ main {
 .card {
     border-radius: 1.8rem;
     box-shadow: 10px 10px 20px 0px #00000040;
-    object-fit: cover;
 }
 
 .card img {
@@ -384,14 +383,18 @@ footer {
 }
 
 .sns-list > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--sns--bg--color);
     border-radius : 50%;
-    padding: 0.3rem 0.4rem;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 .sns-list img {
-    width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
 .link-group {
@@ -406,7 +409,7 @@ footer {
 }
 
 dialog {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left :50%;
     transform: translate(-50%, -50%);
@@ -420,7 +423,7 @@ dialog {
     background-color: var(--bg--sub--color);
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px 0px #00000033;
-
+    z-index: 100;
 }
 
 .modal-container {
