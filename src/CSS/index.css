@@ -74,7 +74,7 @@ button {
     padding : 0 2rem;
     background-color: var(--bg--sub--color);
     z-index: 1000;
-    position: fixed;
+    position: sticky;
     top : 0; 
 }
 
@@ -186,7 +186,7 @@ main {
     justify-content: center;
     background-color: var(--bg--sub--color);
     text-align: center;
-    padding: 7rem 0 39rem;
+    padding: 0 0 39rem;
 }
 
 .download-container > img {
@@ -556,7 +556,7 @@ dialog {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding : 10.2rem 0 0em ;   
+        padding : 0 ;   
     }
     
     .download-container > div {
